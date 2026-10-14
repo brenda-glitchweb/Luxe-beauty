@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Luxe Beauty | Beauty, Elevated</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <p class="brand">LUXE BEAUTY</p>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Shop</a>
+      <a href="#about">Our Story</a>
+    </nav>
+    <button id="cart-button">Bag (0)</button>
+  </header>
+
+  <main>
+   
+<section id="home" class="hero">
+
+  <div class="hero-text">
+    <p class="eyebrow">YOUR BEAUTY, YOUR RITUAL</p>
+
+    <h1>Luxury looks<br>good on you.</h1>
+
+    <p>
+      Discover beauty essentials designed
+      to make every day feel extraordinary.
+    </p>
+
+    <a href="#products" class="shop-button">
+      Explore the Collection
+    </a>
+  </div>
+
+  <img
+    src="Model_face.jpg"
+    alt="Luxe Beauty model"
+    class="hero-inline-image"
+  >
+
+</section>
+
+
+    <section id="products">
+  <p class="eyebrow">THE COLLECTION</p>
+  <h2>Your New Beauty Obsession</h2>
+
+  <div class="product-controls">
+    <input
+      type="search"
+      id="product-search"
+      placeholder="Search beauty products..."
+      aria-label="Search beauty products"
+    >
+
+    <div class="category-filters">
+      <button class="filter-button active" data-category="ALL">
+        All Products
+      </button>
+
+      <button class="filter-button" data-category="LIPS">
+        Lips
+      </button>
+
+      <button class="filter-button" data-category="SKINCARE">
+        Skincare
+      </button>
+
+      <button class="filter-button" data-category="MAKEUP">
+        Makeup
+      </button>
+
+      <button class="filter-button" data-category="ACCESSORIES">
+        Accessories
+      </button>
+      <button class="filter-button" id="favorites-filter">
+  ♡ Favorites
+</button>
+    </div>
+
+    <p id="product-count" aria-live="polite"></p>
+  </div>
+
+  <div id="product-list"></div>
+      <button id="load-more">Load More Products</button>
+</section>
+
+    <section id="about">
+  <p class="eyebrow">THE LUXE BEAUTY PHILOSOPHY</p>  <h2>Beauty, With Intention.</h2>  <p class="story-text">
+    We believe beauty is more than what you see in the mirror.
+    It's how you feel, how you express yourself, and the little
+    rituals that make an ordinary day feel extraordinary.
+  </p>  <p class="story-signature">
+    Discover your glow. Embrace your beauty.
+  </p>
+</section>
+  </main>
+<section id="cart-panel" class="cart-panel" hidden>
+  <div class="cart-heading">
+    <h2>Your Shopping Bag</h2>
+    <button id="close-cart" aria-label="Close shopping bag">×</button>
+  </div>  <div id="cart-items"></div>  <div class="cart-summary">
+    <p>Total: <strong id="cart-total">₦0</strong></p>
+    <button id="continue-shopping">Continue Shopping</button>
+  </div>
+</section>
+  <div id="image-preview" class="image-preview" hidden>
+  <button id="close-image-preview" aria-label="Close image preview">×</button>
+  <img id="preview-image" src="" alt="Product preview">
+  <p id="preview-name"></p>
+</div>
+  <footer>
+    <p>© 2026 Luxe Beauty. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
